@@ -1,0 +1,90 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    min-height: 100vh;
+}
+[class^="box-"] {
+    background: linear-gradient(to bottom, rgba(229, 230, 150, 1) 0%, rgba(209, 211, 96, 1) 100%);
+    display: grid;
+    place-items: top;
+    text-align: center;
+    padding-top: 3px;
+    border-radius: 10px;
+}
+.container {
+    display: grid;
+    gap: 15px;
+    height: 100vh;
+    margin: 15px;
+    grid-template-areas:
+    "Sale1 Sale1 Product1 Product2"
+    "Sale1 Sale1 Product1 Product2"
+    "Sale2 Sale2 Product1 Product2"
+    "Sale2 Sale2 Product1 Product2"
+    "Product3 Product4 Sale3 Sale3"
+    "Product3 Product4 Sale3 Sale3"
+    "Product3 Product4 Sale4 Sale4"
+    "Product3 Product4 Sale4 Sale4"
+    "Product5 Product6 Product7 Product8"
+    "Product5 Product6 Product7 Product8"
+    "Product5 Product6 Product7 Product8"
+    "Product5 Product6 Product7 Product8";
+}
+
+.box-1 {
+    
+grid-area: Sale1;
+}
+.box-2 {
+grid-area: Product1;
+}
+.box-3 {
+grid-area: Product2;
+}
+
+.box-4 {
+grid-area: Sale2;
+}
+.box-5 {
+grid-area: Product3;
+}
+.box-6 {
+grid-area: Product4;
+}
+
+.box-7 {
+grid-area: Sale3;
+}
+.box-8 {
+grid-area: Sale4;
+}
+.box-9 {
+grid-area: Product5;
+}
+
+.box-10 {
+grid-area: Product6;
+}
+.box-11{
+grid-area: Product7;
+}
+.box-12 {
+grid-area: Product8;
+}
+a {
+    color: black;
+    font-size: 20px;
+}
+a:hover {
+    color: darkblue;
+    font-weight: 900;
+}
